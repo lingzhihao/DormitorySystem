@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BedDormActivity">
+
+    <!--导航栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bed_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/beddorm_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/myself_back"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/drom_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1103"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <!--主体部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_dorm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+        <!-- <GridView
+             android:id="@+id/gv_bed_info"
+             android:listSelector="#00000000"
+             android:scrollbars="none"
+             android:cacheColorHint="#00000000"
+             android:verticalSpacing="10dp"
+             android:horizontalSpacing="10dp"
+             android:numColumns="2"
+             android:stretchMode="columnWidth"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"/>-->
+
+        <Button
+            android:id="@+id/bed_dorm_ok_fenpei"
+            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yuanjiao_btn"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="分配床位"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

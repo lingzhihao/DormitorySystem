@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blueBtn">#4b92ff</color>
+    <color name="background">#DFEBFF</color>
+    <color name="biankuang_gray">#B1A5B8</color>
+    <color name="biankuang_blue">#03A9F4</color>
+    <color name="wangjimima">#4b92ff</color>
+    <color name="white">#fff</color>
+    <color name="myselefColor">#FFFFFF</color>
+    <color name="qianhong">#FFA1A1</color>
+    <color name="green">#68D179</color>
+    <color name="gray">#EBEBEB</color>
+    <color name="yellow">#FF9800</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0B89F5</color>
+    <color name="qianhui">#92D6D5D5</color>
+</resources>

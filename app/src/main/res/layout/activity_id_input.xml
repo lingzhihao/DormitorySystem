@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IdInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bed_toolbar"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="30dp">
+            <ImageView
+                android:id="@+id/id_input_back"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/myself_back"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:id="@+id/drom_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手动输入身份证信息"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/yuanjiao_recyclerview"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/user_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/yuanjiao_recyclerview"
+            android:hint="请输入学生身份证号（字幕大写）/学号/姓名"
+            android:maxLines="1"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:id="@+id/search_id"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/id_input_sousuo"/>
+    </LinearLayout>
+
+</LinearLayout>

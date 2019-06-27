@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="10dp"
+    android:paddingBottom="25dp"
+    android:background="@drawable/yuanjiao_recyclerview"
+    >
+
+    <TextView
+        android:id="@+id/tv_confirm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_above="@+id/tv_confirm_labe2"
+        android:text="已将学生凌志豪分配至宿舍，"/>
+
+    <TextView
+        android:id="@+id/tv_confirm_labe2"
+        android:layout_above="@+id/linearLayout_index1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="东区 2栋 1101室"
+        android:textSize="22sp"
+        android:textColor="#ff0000"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_index1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@+id/tv_confirm_label"
+        android:layout_alignRight="@+id/tv_confirm_label">
+
+        <Button
+            android:id="@+id/dorm_allocation_fanhui"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="@drawable/yuanjiao_btn"
+            android:text="返回"/>
+        <Button
+            android:id="@+id/dorm_allocation_ok"
+            android:layout_marginLeft="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/yuanjiao_btn"
+            android:text="确定"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

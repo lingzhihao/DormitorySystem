@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/yuanjiao_recyclerview">
+
+    <!--寝室入住情况-->
+    <RelativeLayout
+        android:id="@+id/dorm_layout_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       >
+
+        <TextView
+            android:id="@+id/bed_num"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:background="@drawable/yuan_fenhong"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/qianhong"/>
+
+        <TextView
+            android:id="@+id/stu_nation"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:layout_alignParentRight="true"
+            android:text="藏"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/stu_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陈小春"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/bed_num"
+            />
+        <TextView
+            android:id="@+id/stu_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17301055"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/stu_name"
+            android:textSize="13sp"
+            />
+        <TextView
+            android:id="@+id/stu_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017级软件技术3班"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/stu_num"
+            android:textSize="13sp"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

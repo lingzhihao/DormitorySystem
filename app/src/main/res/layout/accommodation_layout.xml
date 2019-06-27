@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/yuanjiao_myself"
+    android:layout_marginTop="10dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/yuanjiao_recyclerview"
+        android:layout_weight="1"
+       >
+
+        <TextView
+            android:id="@+id/dm_number"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="1-101"
+            android:textColor="#68D179"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/dm_type"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_alignRight="@+id/dm_number"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/yuan_fenhong"
+            android:text="女"
+            android:gravity="center"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dm_accommodation"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/adt_number"
+            android:layout_marginTop="4dp"
+            android:text="入住情况" />
+
+        <TextView
+            android:id="@+id/adt_number"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="6/6"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:textColor="#68D179"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/dm_address"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dm_number"
+            android:layout_marginLeft="10dp"
+            android:text="校区A区域A1栋"/>
+
+        <TextView
+            android:id="@+id/nation_6"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="彝"
+            android:gravity="center"
+            android:layout_alignTop="@+id/nation_5"
+            android:layout_toLeftOf="@+id/nation_5"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/nation_5"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="苗"
+            android:gravity="center"
+            android:layout_alignTop="@+id/nation_4"
+            android:layout_toLeftOf="@+id/nation_4"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/nation_4"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="藏"
+            android:gravity="center"
+            android:layout_alignTop="@+id/nation_3"
+            android:layout_toLeftOf="@+id/nation_3"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/nation_3"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="维"
+            android:gravity="center"
+            android:layout_alignTop="@+id/nation_2"
+            android:layout_toLeftOf="@+id/nation_2"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/nation_2"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="回"
+            android:gravity="center"
+            android:layout_alignTop="@+id/nation_1"
+            android:layout_toLeftOf="@+id/nation_1"
+            android:layout_marginRight="6dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/nation_1"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/yuan_nation"
+            android:text="汉"
+            android:gravity="center"
+            android:layout_below="@+id/adt_number"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/dorm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:inputType="number"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
